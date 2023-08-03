@@ -28,24 +28,37 @@ https://github.com/InfernalBeard/Java-Desing-Patterns_Magics_DRY_SOLID/blob/126b
 
 ## Повторения (DRY).
 Все повторяющиеся блоки кода вынесены в отдельные методы. (Строки в классе Main: 26, 47, 76, 172)
+https://github.com/InfernalBeard/Java-Desing-Patterns_Magics_DRY_SOLID/blob/126b5cf75dd9d0110ebf1b79f40fa5d6af415b26/src/com/company/Main.java#L26-L47
+https://github.com/InfernalBeard/Java-Desing-Patterns_Magics_DRY_SOLID/blob/b1494335613bbd9dedaec29912aaf0c0707a6d21/src/com/company/Main.java#L50-L76
+https://github.com/InfernalBeard/Java-Desing-Patterns_Magics_DRY_SOLID/blob/b1494335613bbd9dedaec29912aaf0c0707a6d21/src/com/company/Main.java#L79-L117
+https://github.com/InfernalBeard/Java-Desing-Patterns_Magics_DRY_SOLID/blob/b1494335613bbd9dedaec29912aaf0c0707a6d21/src/com/company/Main.java#L122C1-L141
+https://github.com/InfernalBeard/Java-Desing-Patterns_Magics_DRY_SOLID/blob/b1494335613bbd9dedaec29912aaf0c0707a6d21/src/com/company/Main.java#L144-L162
+https://github.com/InfernalBeard/Java-Desing-Patterns_Magics_DRY_SOLID/blob/b1494335613bbd9dedaec29912aaf0c0707a6d21/src/com/company/Main.java#L164-L172
+
 
 ## SOLID.
 
 **1. Принцип единой ответственности (SRP).**
 
 В программе реализован класс ShoppingCart. В нем реализован функционал работы с продуктовой корзиной. Все вервисы класса направлены на обеспечение этого функционала.
+https://github.com/InfernalBeard/Java-Desing-Patterns_Magics_DRY_SOLID/blob/b1494335613bbd9dedaec29912aaf0c0707a6d21/src/com/company/shoppingcart/ShoppingCart.java#L8-L34
 
 В программе реализован класс ShopWindow. В нем реализован функционал работы с витриной магазина. Все вервисы класса направлены на обеспечение этого функционала.
+https://github.com/InfernalBeard/Java-Desing-Patterns_Magics_DRY_SOLID/blob/b1494335613bbd9dedaec29912aaf0c0707a6d21/src/com/company/shopwindow/ShopWindow.java#L12-L63
 
 При изменении данных класов не будет влияния на другие объеты.
 
 **2. Принцип открытости/закрытости (OCP).**
 
 Класс Product расширяют классы Fridge и Dishwasher, при этом сам класс не изменяется.
+https://github.com/InfernalBeard/Java-Desing-Patterns_Magics_DRY_SOLID/blob/b1494335613bbd9dedaec29912aaf0c0707a6d21/src/com/company/products/Dishwasher.java#L7-L10
+https://github.com/InfernalBeard/Java-Desing-Patterns_Magics_DRY_SOLID/blob/b1494335613bbd9dedaec29912aaf0c0707a6d21/src/com/company/products/Fridge.java#L7-L10
 
 **3. Принцип подстановки Барбары Лисков (LSP).**
 
 Классы Fridge и Dishwasher переопределяют метод toString() класса Product с соответствии со своими потребностями, при этом не нарушая поведения переопределенного метода.
+https://github.com/InfernalBeard/Java-Desing-Patterns_Magics_DRY_SOLID/blob/b1494335613bbd9dedaec29912aaf0c0707a6d21/src/com/company/products/Dishwasher.java#L22-L29
+https://github.com/InfernalBeard/Java-Desing-Patterns_Magics_DRY_SOLID/blob/b1494335613bbd9dedaec29912aaf0c0707a6d21/src/com/company/products/Fridge.java#L22-L29
 
 **4. Принцип разделения интерфейса (ISP).**
 
