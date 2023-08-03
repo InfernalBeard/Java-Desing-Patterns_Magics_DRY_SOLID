@@ -63,6 +63,9 @@ https://github.com/InfernalBeard/Java-Desing-Patterns_Magics_DRY_SOLID/blob/b149
 **4. Принцип разделения интерфейса (ISP).**
 
 У нас есть 2 интерфейса ListPrinter и Sorting. Класс ShopWindow расширяет оба интерфеса, в то время как классу ShoppingCart необходим функционал только одного интерфейса ListPrinter.
+https://github.com/InfernalBeard/Java-Desing-Patterns_Magics_DRY_SOLID/blob/b1494335613bbd9dedaec29912aaf0c0707a6d21/src/com/company/products/Fridge.java#L22-L29
+https://github.com/InfernalBeard/Java-Desing-Patterns_Magics_DRY_SOLID/blob/bdb7f63a88bf2229c04956467d9858a29bd3beb2/src/com/company/shopwindow/ShopWindow.java#L42-L45
+https://github.com/InfernalBeard/Java-Desing-Patterns_Magics_DRY_SOLID/blob/bdb7f63a88bf2229c04956467d9858a29bd3beb2/src/com/company/shopwindow/ShopWindow.java#L48-L51
 
 **5. Принцип инверсии зависимостей (DIP).**
 
