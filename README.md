@@ -67,6 +67,10 @@ https://github.com/InfernalBeard/Java-Desing-Patterns_Magics_DRY_SOLID/blob/b149
 https://github.com/InfernalBeard/Java-Desing-Patterns_Magics_DRY_SOLID/blob/bdb7f63a88bf2229c04956467d9858a29bd3beb2/src/com/company/shopwindow/ShopWindow.java#L42-L45
 https://github.com/InfernalBeard/Java-Desing-Patterns_Magics_DRY_SOLID/blob/bdb7f63a88bf2229c04956467d9858a29bd3beb2/src/com/company/shopwindow/ShopWindow.java#L48-L51
 
+https://github.com/InfernalBeard/Java-Desing-Patterns_Magics_DRY_SOLID/blob/02fa2927f3ebf3df0e86d8c3df4190bd0f47d758/src/com/company/shoppingcart/ShoppingCart.java#L19-L27
+
+
 **5. Принцип инверсии зависимостей (DIP).**
 
 В классe Main создаются объекты типа Product (223 - 243 строки). Класс Main не знает о классах Fridge и Dishwasher, он взаимодействует с ними с помощью абстрактного класса Product.
+https://github.com/InfernalBeard/Java-Desing-Patterns_Magics_DRY_SOLID/blob/02fa2927f3ebf3df0e86d8c3df4190bd0f47d758/src/com/company/products/Product.java#L3-L38
